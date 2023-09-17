@@ -31,12 +31,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = (
-    'django-insecure-n=c$8a@namvyy5ngh&5_*p_&5x9pvpk343^s4vz^zh+6l2w@_c')
+    'django-insecure-odg2ufdd%f9=yer=2-@(ca2#-4io^tkk1f7res@qbgj+n#nt1o')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-hmuraja-cidrfpractice-o5c46u0yfk3.ws-eu104.gitpod.io']
 
 
 # Application definition
@@ -47,9 +47,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'cloudinary',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+
+    'profiles',
 
 ]
 
@@ -101,8 +103,8 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': (
-            'django.contrib.auth'
-            '.password_validation.UserAttributeSimilarityValidator'),
+            'django.contrib.auth.password_validation'
+            '.UserAttributeSimilarityValidator'),
     },
     {
         'NAME': (
@@ -111,8 +113,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': (
-            'django.contrib.auth'
-            '.password_validation.CommonPasswordValidator'),
+            'django.contrib.auth.password_validation'
+            '.CommonPasswordValidator'),
     },
     {
         'NAME': (
