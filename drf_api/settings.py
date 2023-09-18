@@ -61,7 +61,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-    '8000-hmuraja-cidrfpractice-o5c46u0yfk3.ws-eu104.gitpod.io',
+    'localhost',
     'drf-api.herokuapp.com']
 
 
