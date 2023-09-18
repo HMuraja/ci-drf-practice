@@ -62,7 +62,7 @@ DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
     'localhost',
-    'drf-api.herokuapp.com']
+    'drf-api-hm-bc31144dac51.herokuapp.com']
 
 
 # Application definition
