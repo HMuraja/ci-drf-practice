@@ -35,7 +35,6 @@ class PostSerializer(serializers.ModelSerializer):
             liked = Like.objects.filter(
                 owner=user, post=obj
             ).first()
-            # print(following)
             return liked.id if liked else None
         return None
 
