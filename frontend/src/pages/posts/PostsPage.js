@@ -28,7 +28,6 @@ function PostsPage({ message, filter = "" }) {
     const fetchPosts = async () => {
       try {
         const { data } = await axiosReq.get(`/posts/?${filter}search=${query}`);
-        console.log(`useEffectData: ${data.next}`)
         setPosts(data);
         setHasLoaded(true);
       } catch (err) {
@@ -63,8 +62,6 @@ function PostsPage({ message, filter = "" }) {
             placeholder="Search posts"
           />
         </Form>
-        {console.log(posts)}
-
         {hasLoaded ? (
           <>
             {posts.results.length ? (
