@@ -11,8 +11,10 @@ import Post from "./Post";
 
 import CommentCreateForm from "../comments/CommentCreateForm";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
+import { useRedirect } from "../../hooks/useRedirect";
 
 function PostPage() {
+  useRedirect("loggedout")
   const { id } = useParams();
   const [post, setPost] = useState({ results: [] });
 
